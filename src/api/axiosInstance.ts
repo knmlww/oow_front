@@ -2,10 +2,19 @@ import axios from 'axios'
 
 // Axios 인스턴스 생성
 const instance = axios.create({
-    baseURL: `${process.env.BASE_API_URL}/api`,
+    baseURL: `${process.env.REACT_APP_BASE_API_URL}/api`,
     timeout: 10000,
     headers: { "Content-Type": "application/json" }
   });
+
+
+
+// 요청 인터셉터
+instance.interceptors.request.use(req => {
+  console.log("axios 요청");
+  console.log(req);
+  return req;
+});
 
 
   // 응답 인터셉터
