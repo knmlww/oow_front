@@ -1,0 +1,25 @@
+
+.main {
+  text-align: center;
+}
+
+.container{ 
+  display: block;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+}  
+
+.container .img-section{
+    position: relative;
+    text-align: center;
+  }
+  
+
+  .container .bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 480px;
+}
