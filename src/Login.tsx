@@ -8,10 +8,11 @@ const Login = () => {
   const [data, setData] = useState({});
   useEffect(()=>{
     const res =  testapi.getServerStatus();
-    console.dir(res);
+    console.log(res);
   });
 
   return (
+    <>
     <div className="login-container">
       <div className="logo">
         <img src={logo} alt="로고" />
@@ -29,6 +30,7 @@ const Login = () => {
         <button type="submit">로그인</button>
       </form>
     </div>
+    </>
   );
 };
 
